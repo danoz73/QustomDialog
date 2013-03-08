@@ -13,15 +13,15 @@ public class TestDialogActivity extends Activity {
 
 	private OnClickListener mShowDialogClickListener =new OnClickListener(){
 		public void onClick(View v){
-			QustomDialogBuilder customDialogBuilder = new QustomDialogBuilder(v.getContext()).
+			QustomDialogBuilder qustomDialogBuilder = new QustomDialogBuilder(v.getContext()).
 					setTitle("Set IP Address").
 					setTitleColor(HALLOWEEN_ORANGE).
 					setDividerColor(HALLOWEEN_ORANGE).
 					setMessage("You are now entering the 10th dimension.").
-					customSetView(R.layout.example_ip_address_layout, v.getContext()).
+					setCustomView(R.layout.example_ip_address_layout, v.getContext()).
 					setIcon(getResources().getDrawable(R.drawable.ic_launcher));
 			
-			customDialogBuilder.show();
+			qustomDialogBuilder.show();
 		}
 	};
 	

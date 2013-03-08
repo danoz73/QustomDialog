@@ -20,23 +20,23 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int alertTitle=0x7f070005;
+        public static final int alertTitle=0x7f070007;
         public static final int button1=0x7f070000;
-        public static final int contentPanel=0x7f070007;
-        public static final int customPanel=0x7f070009;
-        public static final int icon=0x7f070004;
-        public static final int ip_edit_text=0x7f07000b;
-        public static final int ip_text=0x7f07000a;
-        public static final int message=0x7f070008;
-        public static final int parentPanel=0x7f070001;
-        public static final int titleDivider=0x7f070006;
-        public static final int title_template=0x7f070003;
-        public static final int topPanel=0x7f070002;
+        public static final int contentPanel=0x7f070009;
+        public static final int customPanel=0x7f07000b;
+        public static final int icon=0x7f070006;
+        public static final int ip_edit_text=0x7f070002;
+        public static final int ip_text=0x7f070001;
+        public static final int message=0x7f07000a;
+        public static final int parentPanel=0x7f070003;
+        public static final int titleDivider=0x7f070008;
+        public static final int title_template=0x7f070005;
+        public static final int topPanel=0x7f070004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int custom_body=0x7f030001;
-        public static final int example_ip_address_layout=0x7f030002;
+        public static final int example_ip_address_layout=0x7f030001;
+        public static final int qustom_dialog_layout=0x7f030002;
     }
     public static final class string {
         public static final int alert_image_content_description=0x7f050002;

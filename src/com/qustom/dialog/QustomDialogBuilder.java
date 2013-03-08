@@ -28,7 +28,7 @@ public class QustomDialogBuilder extends AlertDialog.Builder{
     public QustomDialogBuilder(Context context) {
         super(context);
 
-        mDialogView = View.inflate(context, R.layout.custom_body, null);
+        mDialogView = View.inflate(context, R.layout.qustom_dialog_layout, null);
         setView(mDialogView);
 
         mTitle = (TextView) mDialogView.findViewById(R.id.alertTitle);
@@ -83,7 +83,15 @@ public class QustomDialogBuilder extends AlertDialog.Builder{
         return this;
     }
     
-    public QustomDialogBuilder customSetView(int resId, Context context) {
+    /**
+     * This allows you to specify a custom layout for the area below the title divider bar
+     * in the dialog. As an example you can look at example_ip_address_layout.xml and how
+     * I added it in TestDialogActivity.java
+     * 
+     * @param resId  of the layout you would like to add
+     * @param context
+     */
+    public QustomDialogBuilder setCustomView(int resId, Context context) {
     	View customView = View.inflate(context, resId, null);
     	((FrameLayout)mDialogView.findViewById(R.id.customPanel)).addView(customView);
     	return this;
