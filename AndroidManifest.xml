@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.custom.dialog"
+    package="com.qustom.dialog"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -13,7 +13,7 @@
         android:theme="@android:style/Theme.Holo"
         android:allowBackup="false">
         <activity
-            android:name="com.custom.dialog.TestDialogActivity"
+            android:name="com.qustom.dialog.TestDialogActivity"
             android:label="@string/app_name" 
             android:screenOrientation="portrait">
             <intent-filter>

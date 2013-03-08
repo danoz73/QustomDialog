@@ -1,4 +1,4 @@
-package com.custom.dialog;
+package com.qustom.dialog;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -9,9 +9,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.custom.dialog.R;
+import com.qustom.dialog.R;
 
-public class CustomDialogBuilder extends AlertDialog.Builder{
+public class QustomDialogBuilder extends AlertDialog.Builder{
 
 	/** The custom_body layout */
 	private View mDialogView;
@@ -25,7 +25,7 @@ public class CustomDialogBuilder extends AlertDialog.Builder{
 	/** The colored holo divider. You can set its color with the setDividerColor method */
 	private View mDivider;
 	
-    public CustomDialogBuilder(Context context) {
+    public QustomDialogBuilder(Context context) {
         super(context);
 
         mDialogView = View.inflate(context, R.layout.custom_body, null);
@@ -43,47 +43,47 @@ public class CustomDialogBuilder extends AlertDialog.Builder{
      * 
      * @param colorString for passing "#ffffff"
      */
-    public CustomDialogBuilder setDividerColor(String colorString) {
+    public QustomDialogBuilder setDividerColor(String colorString) {
     	mDivider.setBackgroundColor(Color.parseColor(colorString));
     	return this;
     }
  
     @Override
-    public CustomDialogBuilder setTitle(CharSequence text) {
+    public QustomDialogBuilder setTitle(CharSequence text) {
         mTitle.setText(text);
         return this;
     }
 
-    public CustomDialogBuilder setTitleColor(String colorString) {
+    public QustomDialogBuilder setTitleColor(String colorString) {
     	mTitle.setTextColor(Color.parseColor(colorString));
     	return this;
     }
 
     @Override
-    public CustomDialogBuilder setMessage(int textResId) {
+    public QustomDialogBuilder setMessage(int textResId) {
         mMessage.setText(textResId);
         return this;
     }
 
     @Override
-    public CustomDialogBuilder setMessage(CharSequence text) {
+    public QustomDialogBuilder setMessage(CharSequence text) {
         mMessage.setText(text);
         return this;
     }
 
     @Override
-    public CustomDialogBuilder setIcon(int drawableResId) {
+    public QustomDialogBuilder setIcon(int drawableResId) {
         mIcon.setImageResource(drawableResId);
         return this;
     }
 
     @Override
-    public CustomDialogBuilder setIcon(Drawable icon) {
+    public QustomDialogBuilder setIcon(Drawable icon) {
         mIcon.setImageDrawable(icon);
         return this;
     }
     
-    public CustomDialogBuilder customSetView(int resId, Context context) {
+    public QustomDialogBuilder customSetView(int resId, Context context) {
     	View customView = View.inflate(context, resId, null);
     	((FrameLayout)mDialogView.findViewById(R.id.customPanel)).addView(customView);
     	return this;

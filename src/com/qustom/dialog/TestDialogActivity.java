@@ -1,10 +1,11 @@
-package com.custom.dialog;
+package com.qustom.dialog;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import com.qustom.dialog.R;
 
 public class TestDialogActivity extends Activity {
 
@@ -12,7 +13,7 @@ public class TestDialogActivity extends Activity {
 
 	private OnClickListener mShowDialogClickListener =new OnClickListener(){
 		public void onClick(View v){
-			CustomDialogBuilder customDialogBuilder = new CustomDialogBuilder(v.getContext()).
+			QustomDialogBuilder customDialogBuilder = new QustomDialogBuilder(v.getContext()).
 					setTitle("Set IP Address").
 					setTitleColor(HALLOWEEN_ORANGE).
 					setDividerColor(HALLOWEEN_ORANGE).
