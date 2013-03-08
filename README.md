@@ -18,12 +18,12 @@ qustomDialogBuilder.show();
 QustomDialog is really just a single class (`QustomDialogBuild.java`) in addition to one layout file ('qustom_dialog_layout.xml'). You can plug these into your project and use it in its simplest form as shown above. If you have the need for more complex layouts other than just a simple message, you can set custom views as shown below (it references an example layout `example_ip_address_layout.xml`).
 
 ```java
-QustomDialogBuilder qustomDialogBuilder = new QustomDialogBuilder(v.getContext()).
+QustomDialogBuilder qustomDialogBuilder = new QustomDialogBuilder(context).
 		setTitle("Set IP Address").
 		setTitleColor("#FF00FF").
 		setDividerColor("#FF00FF").
 		setMessage("You are now entering the 10th dimension.").
-		setCustomView(R.layout.example_ip_address_layout, v.getContext()).
+		setCustomView(R.layout.example_ip_address_layout, context).
 		setIcon(getResources().getDrawable(R.drawable.ic_launcher));
 
 qustomDialogBuilder.show();
