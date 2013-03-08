@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Custom Dialog Example</string>
+    <string name="main_button_text">See a hot new custom dialog!</string>
+    <string name="alert_image_content_description">Alert Image</string>
+
+</resources>

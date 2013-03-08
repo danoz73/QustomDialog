@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="padding_small">8dip</dimen>
+    <dimen name="padding_medium">8dip</dimen>
+    <dimen name="padding_large">16dip</dimen>
+
+</resources>
