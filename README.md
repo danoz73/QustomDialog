@@ -6,7 +6,7 @@ Qustom helps you make quick custom dialogs for Android. All this is, for the tim
 Usage
 -----
 ```java
-QustomDialogBuilder qustomDialogBuilder = new QustomDialogBuilder(v.getContext()).
+QustomDialogBuilder qustomDialogBuilder = new QustomDialogBuilder(context).
 		setTitle("Set IP Address").
 		setTitleColor("#FF00FF").
 		setDividerColor("#FF00FF").
