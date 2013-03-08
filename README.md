@@ -1,7 +1,9 @@
 QustomDialog
 =======
 
-Qustom helps you make quick custom dialogs for Android. All this is, for the time being, is a way to make it easy to achieve the Holo look in a simple dialog that has a different divider color and text color.
+Qustom helps you make quick custom dialogs for Android. All this is, for the time being, is a way to make it easy to achieve the Holo look in a simple dialog that has a different divider color and text color:
+
+![checkitout](http://i.imgur.com/rVCs1Fc.png)
 
 Usage
 -----
