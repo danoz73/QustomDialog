@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import com.qustom.dialog.R;
 
 public class TestDialogActivity extends Activity {
 
@@ -13,13 +12,15 @@ public class TestDialogActivity extends Activity {
 
 	private OnClickListener mShowDialogClickListener =new OnClickListener(){
 		public void onClick(View v){
-			QustomDialogBuilder qustomDialogBuilder = new QustomDialogBuilder(v.getContext()).
-					setTitle("Set IP Address").
-					setTitleColor(HALLOWEEN_ORANGE).
-					setDividerColor(HALLOWEEN_ORANGE).
-					setMessage("You are now entering the 10th dimension.").
-					setCustomView(R.layout.example_ip_address_layout, v.getContext()).
-					setIcon(getResources().getDrawable(R.drawable.ic_launcher));
+			String[] sa = {"dog","cat"};
+			QustomDialogBuilder qustomDialogBuilder = (QustomDialogBuilder) new QustomDialogBuilder(v.getContext())
+					.setTitle("Set IP Address")
+					.setTitleColor(HALLOWEEN_ORANGE)
+					.setDividerColor(HALLOWEEN_ORANGE)
+					.setMessage("You are now entering the 10th dimension.")
+					.setCustomView(android.R.layout.example_ip_address_layout, v.getContext())
+					.setIcon(getResources().getDrawable(android.R.drawable.ic_launcher))
+                    .setItems(sa, null);
 			
 			qustomDialogBuilder.show();
 		}
@@ -28,8 +29,8 @@ public class TestDialogActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		Button bt = (Button)findViewById(R.id.button1);
+		setContentView(android.R.layout.activity_main);
+		Button bt = (Button)findViewById(android.R.id.button1);
 		bt.setOnClickListener(mShowDialogClickListener);
 	}
 
