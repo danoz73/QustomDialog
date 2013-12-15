@@ -89,4 +89,14 @@ I should have probably just rewritten similar code, but i was feeling lazy. Mayb
         android:layout_weight="1">
     </FrameLayout>
 
+    <ScrollView
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <LinearLayout
+            android:id="@+id/items_list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
