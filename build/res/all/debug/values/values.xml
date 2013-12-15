@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/D/Documents/Daniel/development/QustomDialog/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="padding_large">16dip</dimen>
+    <dimen name="padding_medium">8dip</dimen>
+    <dimen name="padding_small">8dip</dimen>
+    <!-- From: file:/Users/D/Documents/Daniel/development/QustomDialog/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="alert_image_content_description">Alert Image</string>
+    <string name="app_name">Custom Dialog Example</string>
+    <string name="main_button_text">See a hot new custom dialog!</string>
+    <!-- From: file:/Users/D/Documents/Daniel/development/QustomDialog/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="SnapchatTheme" parent="@android:style/Theme.Holo" />
+
+</resources>
